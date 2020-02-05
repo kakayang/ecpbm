@@ -11,7 +11,7 @@ public class ProductInfo {
     private double price;
     private String intro;
     private int status;
-    private double priceForm;
+    private double priceFrom;
     private double priceTo;
 
     public int getId() {
@@ -94,12 +94,12 @@ public class ProductInfo {
         this.status = status;
     }
 
-    public double getPriceForm() {
-        return priceForm;
+    public double getPriceFrom() {
+        return priceFrom;
     }
 
-    public void setPriceForm(double priceForm) {
-        this.priceForm = priceForm;
+    public void setPriceFrom(double priceFrom) {
+        this.priceFrom = priceFrom;
     }
 
     public double getPriceTo() {

@@ -7,7 +7,7 @@ public class OrderInfo {
     private String status;
     private String ordertime;
     private double orderprice;
-    private String orderTimeForm;
+    private String orderTimeFrom;
     private String orderTimeTo;
 
     public Integer getId() {
@@ -58,12 +58,12 @@ public class OrderInfo {
         this.orderprice = orderprice;
     }
 
-    public String getOrderTimeForm() {
-        return orderTimeForm;
+    public String getOrderTimeFrom() {
+        return orderTimeFrom;
     }
 
-    public void setOrderTimeForm(String orderTimeForm) {
-        this.orderTimeForm = orderTimeForm;
+    public void setOrderTimeForm(String orderTimeFrom) {
+        this.orderTimeFrom = orderTimeFrom;
     }
 
     public String getOrderTimeTo() {
