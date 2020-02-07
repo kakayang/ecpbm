@@ -36,7 +36,7 @@ public interface ProductInfoDao {
     void save(ProductInfo pi);
 
     // 修改商品
-    @Update("update product_info set code=#{code},name=#{name},tid=#{type.id},brand=#{brand},pid=#{pic},num=#{num},price=#{price},intro=#{intro},status=#{status} where id=#{id}")
+    @Update("update product_info set code=#{code},name=#{name},tid=#{type.id},brand=#{brand},pic=#{pic},num=#{num},price=#{price},intro=#{intro},status=#{status} where id=#{id}")
     void edit(ProductInfo pi);
 
     // 更新商品状态
