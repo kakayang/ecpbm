@@ -28,7 +28,7 @@
                 success:function (result) {
                     var result = eval('('+result+')');
                     if (result.success == 'true'){
-                        window.location.href == 'admin.jsp';
+                        window.location.href = 'admin.jsp';
                         $("#adminLoginDlg").dialog("close");
                     }else {
                         $.messager.show({

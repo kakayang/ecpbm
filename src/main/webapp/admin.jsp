@@ -27,7 +27,7 @@
     <div data-options="region:'west',split:true,title:'功能菜单'" style="width: 180px">
         <ul id="tt"></ul>
     </div>
-    <div data-options="region:'south',border:flase" style="height: 50px;background: #A9FACD;padding: 10px;text-align: center">
+    <div data-options="region:'south',border:false" style="height: 50px;background: #A9FACD;padding: 10px;text-align: center">
         powered by calorieyang
     </div>
     <div data-options="region:'center'">
@@ -35,10 +35,8 @@
     </div>
     <script type="text/javascript">
         $('#tt').tree({
-            url : 'admininfo/getTree?adminid=${sessionScope.admin.id}'
-        });
-        $('#tt').tree({
-            onclick:function (node) {
+            url : 'admininfo/getTree?adminid=${sessionScope.admin.id}',
+            onClick:function (node) {
                 if("商品列表" == node.text){
                     if($('#tabs').tabs('exists','商品列表')){
                         $('#tabs').tabs('select','商品列表');
@@ -99,7 +97,7 @@
                             closable:true
                         });
                     }
-                }else if("退出系统" == node.text){
+                }else if("退出系统" === node.text){
                     $.ajax({
                         url: 'admininfo/logout',
                         success:function (data) {
